@@ -7,12 +7,19 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 
 <AnchorPane prefHeight="573.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TableViewFormController">
    <children>
+      <ImageView fitHeight="573.0" fitWidth="863.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/bg.jpg" />
+         </image>
+      </ImageView>
       <Label layoutX="19.0" layoutY="13.0" text="Customer Form" textFill="#171fbf">
          <font>
             <Font name="Ubuntu Bold" size="25.0" />
@@ -22,10 +29,10 @@
       <JFXTextField fx:id="txtCusId" labelFloat="true" layoutX="21.0" layoutY="76.0" prefHeight="31.0" prefWidth="193.0" promptText="Customer id" />
       <JFXTextField fx:id="txtCusName" labelFloat="true" layoutX="224.0" layoutY="76.0" prefHeight="31.0" prefWidth="193.0" promptText="Customer name" />
       <JFXTextField fx:id="txtCusAddress" labelFloat="true" layoutX="428.0" layoutY="76.0" prefHeight="31.0" prefWidth="193.0" promptText="Customer address" />
-      <JFXTextField fx:id="txtSalary" labelFloat="true" layoutX="632.0" layoutY="76.0" prefHeight="31.0" prefWidth="193.0" promptText="Salary" />
+      <JFXTextField fx:id="txtSalary" focusColor="#293865" labelFloat="true" layoutX="632.0" layoutY="76.0" prefHeight="31.0" prefWidth="193.0" promptText="Salary" />
       <TextField fx:id="txtSearch" layoutX="24.0" layoutY="141.0" prefHeight="31.0" prefWidth="642.0" promptText="Search" />
-      <JFXButton buttonType="RAISED" layoutX="694.0" layoutY="141.0" prefHeight="31.0" prefWidth="136.0" style="-fx-background-color: #3498db;" text="Save Customer" textFill="WHITE" />
-      <JFXButton buttonType="RAISED" layoutX="706.0" layoutY="14.0" onAction="#newCustomerOnAction" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #3498db;" text="+ New" textFill="WHITE" />
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="694.0" layoutY="141.0" onAction="#saveCustomerOnAction" prefHeight="31.0" prefWidth="149.0" style="-fx-background-color: #3498db;" text="Save Customer" textFill="WHITE" />
+      <JFXButton fx:id="btnNew" buttonType="RAISED" layoutX="706.0" layoutY="14.0" onAction="#newCustomerOnAction" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #3498db;" text="+ New" textFill="WHITE" />
       <TableView fx:id="tblCustomer" layoutX="16.0" layoutY="187.0" prefHeight="361.0" prefWidth="802.0">
         <columns>
           <TableColumn fx:id="colId" prefWidth="119.0" text="Customer Id" />

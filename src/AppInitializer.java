@@ -15,6 +15,7 @@ public class AppInitializer extends Application {
     public void start(Stage primaryStage) throws IOException {
         primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/TableViewForm.fxml"))));
         primaryStage.setTitle("Table App v0.1.0");
+        primaryStage.setFullScreen(false);
         primaryStage.show();
     }
 }
