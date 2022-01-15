@@ -2,8 +2,8 @@
 Table app from javafx
 
 ## Using Tools
-- Intelij Idea 2021.2.4
-- SceneBuilder
+- Intelij Idea 2021.2.4(IDE)
+- SceneBuilder(JavaFX)
 
 ## My Workstation
 - Dell Insprion 15 3502
